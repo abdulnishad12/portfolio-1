@@ -38,6 +38,7 @@ body {
   float: left;
   width: 200px;
 }
+
 .projekt_beschreibung > img {
   float: left;
 }
@@ -55,4 +56,15 @@ body {
     display: block;
     margin: 0 10px 20px 50px;
     clear: both;
+  }
+
+  @media (max-width: 700px) {
+    .projekt_beschreibung > p {
+      width: auto;
+      margin: 0 10px 0 25px;
+    }
+    .projekt img {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
   }

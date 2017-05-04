@@ -1,70 +1,201 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
-  background-color: white;
+  font-family: 'Fira Mono', sans-serif;
 
 }
 
-.logo {
-  position: fixed;
-  margin: 25px;
-  top: 0;
+h2 {
+  font-family: 'Fira Sans';
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  line-height: 1.5;
+}
+
 .name {
-  font-size: 30px;
-  line-height: 28px;
+  z-index: 100;
+  position: fixed;
+  margin: 20px 50px;
+  top: 0;
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.projekt:first-child {
-  margin-top: 120px;
+.menubar {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  height: 30px;
+  margin: 300px 0 0 -195px;
+  position: fixed;
 }
 
-.projekt > h3 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 15pt;
+.punkt {
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 20px;
 }
 
-.fliesstext, .projekt_beschreibung > p {
-  font-family: 'Roboto Slab', serif;
-  font-size: 10pt;
-}
-.projekt_beschreibung > p {
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  color: black;
   float: left;
-  width: 200px;
 }
 
-.projekt_beschreibung > img {
+.menupunkt {
+  color: black;
+  text-decoration: none;
+  line-height: 20px;
+  font-family: 'Fira Sans';
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menupunkt:hover {
+  border-width: 2px;
+  color: blue;
+}
+
+.project-gallery {
+  max-width: 1020px;
+  padding-left: 100px;
+  margin: 100px auto;
+}
+@media (max-width: 1120px){
+  .project-gallery {
+    max-width: 680px;
+  }
+}
+
+.gallery-small {
   float: left;
+  position: relative;
+  max-width: 240px;
 }
 
-  h1 {
-    color: black;
+.gallery-big {
+  float: left;
+  position: relative;
+  max-width: 580px;
+}
 
-  }
+.margin1 {
+  margin: 80px 100px 0 0;
+}
 
-  h3 {
-    margin: 30px 0 0 25px;
-  }
-  .projekt img {
-    width: 60%;
-    display: block;
-    margin: 0 10px 20px 50px;
-    clear: both;
-  }
+.margin-left {
+  margin-left: 340px;
+}
 
-  @media (max-width: 700px) {
-    .projekt_beschreibung > p {
-      width: auto;
-      margin: 0 10px 0 25px;
-    }
-    .projekt img {
-      width: 100%;
-      margin: 0 0 20px 0;
-    }
+.margin-left3 {
+  margin-left: 340px;
+}
+
+
+.margin-top {
+  margin-top: 420px;
+}
+@media (max-width: 1120px){
+  .margin-top {
+    margin-top: 80px;
   }
+}
+
+.margin-left2 {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.projekt1 {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  max-height: 100%;
+}
+
+.projekt2 {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  max-width: 100%;
+}
+
+.text-gallery {
+  font-family: 'Fira Sans';
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 27px;
+  -webkit-transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, opacity 0.3s;
+  opacity: 0;
+}
+
+.text-gallery:hover {
+  box-shadow: rgba(150, 150, 150, 0.2) 0 2px 2px, rgba(150, 150, 150, 0.2) 0 4px 4px, rgba(150, 150, 150, 0.2) 0 8px 8px, rgba(150, 150, 150, 0.2) 0 16px 16px, rgba(150, 150, 150, 0.2) 0 32px 32px, rgba(150, 150, 150, 0.2) 0 64px 64px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.image-small {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-big {
+  width: 580px;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  clear: both;
+  text-align: center;
+}
+
+.socialmediaicons {
+  margin: 30px;
+}

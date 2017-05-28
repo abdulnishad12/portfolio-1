@@ -35,6 +35,11 @@ p {
   font-weight: 700;
   font-size: 24px;
 }
+@media (max-width: 580px){
+  .name {
+    margin-left: 30px;
+  }
+}
 
 .menubar {
   -webkit-transform: rotate(-90deg);
@@ -88,6 +93,11 @@ p {
   .project-gallery {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (max-width: 580px){
+  .project-gallery {
+    margin: 20px auto;
   }
 }
 

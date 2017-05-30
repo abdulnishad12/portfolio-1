@@ -73,7 +73,7 @@ p {
 @media (max-width: 780px){
   .project-header {
     height: 400px;
-    background-position: 50% -150px;
+    background-position: 50% 0;
   }
 }
 

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Fira Mono', sans-serif;
+
+}
+
+h2 {
+  font-family: 'Fira Sans';
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.name {
+  z-index: 100;
+  position: fixed;
+  margin: 20px 50px;
+  top: 0;
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-size: 24px;
+}
+@media (max-width: 580px){
+  .name {
+    margin-left: 30px;
+  }
+}
+
+
+
+.header {
+  width: 100%;
+  height: 600px;
+}
+@media (max-width: 780px){
+  .header {
+    height: 400px;
+  }
+}
+
+.project-title {
+  text-align: center;
+  width: 100%;
+  margin: 100px auto 20px auto;
+
+}
+
+.project-header {
+    height: 600px;
+
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media (max-width: 780px){
+  .project-header {
+    height: 400px;
+    background-position: 50% -150px;
+  }
+}
+
+.project-view {
+  max-width: 1020px;
+  padding: 0 100px;
+  margin: 100px auto;
+}
+@media (max-width: 780px){
+  .project-view {
+    padding: 0 50px;
+  }
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 100px 100px 0 0;
+}
+
+.image-left {
+  float: left;
+  width: 580px;
+}
+@media (max-width: 780px){
+  .image-left {
+    width: 100%;
+  }
+}
+
+.image-right {
+  float: right;
+  width: 580px;
+}
+@media (max-width: 780px){
+  .image-right {
+    width: 100%;
+  }
+}
+
+.image-big {
+  width: 100%;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 200px;
+}
+@media (max-width: 780px){
+  .back-button {
+    margin-top: 100px;
+  }
+}
+
+button {
+  background-color: white;
+  color: rgb(70, 70, 70);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+}
+button:hover {
+  color: rgb(230, 230, 230);
+  cursor: auto;
+}
+
+.contact {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  clear: both;
+  text-align: center;
+}
+
+.socialmediaicons {
+  margin: 30px;
+}

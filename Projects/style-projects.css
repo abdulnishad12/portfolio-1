@@ -54,31 +54,31 @@ p {
   }
 }
 
-.project-title {
-  text-align: center;
-  width: 100%;
-  margin: 100px auto 20px auto;
-}
-@media (max-width: 780px){
-  .project-title {
-    margin-top: 50px;
-  }
-}
-
 .project-header {
     height: 600px;
 
     /* parallax scrolling effect */
     background-attachment: fixed;
-    background-position: bottom;
+
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 @media (max-width: 780px){
   .project-header {
     height: 400px;
-    background-position: 50% 0;
+    background-attachment: local;
   }
+}
+
+.project-title {
+  text-align: center;
+  width: 100%;
+  margin: 100px auto 20px auto;
 }
 
 .project-view {
